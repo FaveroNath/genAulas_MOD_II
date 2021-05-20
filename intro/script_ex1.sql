@@ -3,7 +3,7 @@ CREATE DATABASE db_rh;
 USE db_rh;
 
 CREATE TABLE tb_funcionarios(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     cargo VARCHAR(255) NOT NULL,
     setor VARCHAR(255) NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE tb_funcionarios(
 
 INSERT INTO tb_funcionarios(nome,cargo,setor,salario) 
 	VALUES 
-    ("Maria Das Dores", "secretária", "atendimento", 1750.50),
+    	("Maria Das Dores", "secretária", "atendimento", 1750.50),
 	("Adalberto", "assitente de TI", "TI", 1250.66),
 	("Clara Maria", "CEO", "TI", 60750.50),
 	("Humberto", "Limpeza", "atendimento", 1550.50),

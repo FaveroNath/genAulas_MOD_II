@@ -3,7 +3,7 @@ CREATE DATABASE db_escola;
 USE db_escola;
 
 CREATE TABLE tb_alunos(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     nota DECIMAL(10,2) NULL,
     materia VARCHAR(255),
@@ -13,8 +13,8 @@ CREATE TABLE tb_alunos(
 );
 
 INSERT INTO tb_alunos(nome,nota,materia,matricula)
-	VALUES
-	("Nathalia Favero",10.00,"matemática",1235),
+    VALUES
+    ("Nathalia Favero",10.00,"matemática",1235),
     ("Antonio Joaquim",9.7,"Física",1236),
     ("Claudia Fenix",5.5,"Arte contemporâne",7235),
     ("Paula Mara",4.5,"Filosofia",1785),

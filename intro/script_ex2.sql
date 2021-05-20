@@ -3,7 +3,7 @@ CREATE DATABASE db_ecommerce;
 USE db_ecommerce;
 
 CREATE TABLE tb_produtos(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     preco DECIMAL(10,2),
     quantidade BIGINT(5),
