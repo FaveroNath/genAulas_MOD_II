@@ -4,9 +4,9 @@ USE db_generation_game_online;
 
 -- Criando tabelas 
 CREATE TABLE tb_personagem(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
-	poder_ataque BIGINT(7),
+    poder_ataque BIGINT(7),
     poder_defesa BIGINT(7),
     classe_id BIGINT(5) NOT NULL,
     PRIMARY KEY(id),
@@ -14,7 +14,7 @@ CREATE TABLE tb_personagem(
 );
 
 CREATE TABLE tb_classe(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     tipo VARCHAR(255) NOT NULL,
     arma VARCHAR(255) NOT NULL,
     PRIMARY KEY(id)
@@ -23,7 +23,7 @@ CREATE TABLE tb_classe(
 -- Inserindo valores
 INSERT INTO tb_classe(tipo,arma)
 VALUES
-	("Gnomo","Serra Elétrica"),
+    ("Gnomo","Serra Elétrica"),
     ("Bicho das Trevas","Sugador de almas"),
     ("Cthulhu","Tentáculos"),
     ("Guerreiro","Espada"),
