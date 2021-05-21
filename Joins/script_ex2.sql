@@ -3,14 +3,14 @@ CREATE DATABASE db_pizzaria_legal;
 USE db_pizzaria_legal;
 
 CREATE TABLE tb_categoria(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     tipo VARCHAR(255) NOT NULL,
     vegana boolean,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE tb_pizza(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     preco DECIMAL(10,2),
     sabor VARCHAR(255) NOT NULL,
@@ -21,15 +21,15 @@ CREATE TABLE tb_pizza(
 
 INSERT INTO tb_categoria(tipo, vegana)
 VALUES 
-	("Pizza doce", TRUE),
+    ("Pizza doce", TRUE),
     ("Pizza doce", FALSE),
     ("Pizza salgada", TRUE),
     ("Pizza salgada", FALSE),
-	("Esfiha", FALSE);
+    ("Esfiha", FALSE);
     
 INSERT INTO tb_pizza(nome,preco,sabor,categoria_id)
 VALUES 
-	("Pizza a moda da casa",45.50,"Palmito e queijo",4),
+    ("Pizza a moda da casa",45.50,"Palmito e queijo",4),
     ("Baina", 19.50,"Ovo, calabresa, pimenta e cebola",4),
     ("Portuguesa", 35.99,"Presunto, queijo, ovo e milho",4),
     ("Esfiha de carne",20.50,"carne",5),
