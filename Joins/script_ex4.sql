@@ -3,14 +3,14 @@ CREATE DATABASE db_cidade_das_frutas;
 USE db_cidade_das_frutas;
 
 CREATE TABLE tb_categoria(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     tipo VARCHAR(255) NOT NULL,
     graos BOOLEAN,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE tb_produto(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     preco DECIMAL(10,2),
     quantidade BIGINT(5) NULL,
@@ -23,7 +23,7 @@ CREATE TABLE tb_produto(
 
 INSERT INTO tb_categoria(tipo,graos)
 VALUES
-	("Legumes",false),
+    ("Legumes",false),
     ("Verduras",false),
     ("Não perecíveis", true),
     ("Frutas",false),
@@ -31,7 +31,7 @@ VALUES
     
 INSERT INTO tb_produto(nome,preco,quantidade,categoria_id)
 VALUES
-	("Cenoura",6.35,300,1),
+    ("Cenoura",6.35,300,1),
     ("Batata", 2.35,550,1),
     ("Beterraba",8.35,150,1),
     ("Couve flor",5.35,881,2),

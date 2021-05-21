@@ -3,7 +3,7 @@ CREATE DATABASE db_farmacia_do_bem;
 USE db_farmacia_do_bem;
 
 CREATE TABLE tb_categoria(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     tipo VARCHAR(255) NOT NULL,
     generico BOOLEAN NULL,
     PRIMARY KEY(id)
@@ -11,7 +11,7 @@ CREATE TABLE tb_categoria(
 
 
 CREATE TABLE tb_produto(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     preco DECIMAL(10,2),
     descricao VARCHAR(255) NULL,
@@ -24,7 +24,7 @@ CREATE TABLE tb_produto(
 
 INSERT INTO tb_categoria(tipo,generico)
 VALUES 
-	("Cosmético",0),
+    ("Cosmético",0),
     ("Medicamentos", true),
     ("Medicamentos",false),
     ("Higiene e beleza",0),
@@ -32,9 +32,9 @@ VALUES
     
 INSERT INTO tb_produto(nome,preco,descricao,categoria_id)
 VALUES
-	("Dipirona",3.30,"500 mg",2),
+    ("Dipirona",3.30,"500 mg",2),
     ("Dipirona",10.30,"1 g",3),
-	("Batom", 15.50,"cor de rosa",1),
+    ("Batom", 15.50,"cor de rosa",1),
     ("cetoprofeno", 2.30,"100 mg",2),
     ("Ibuprofeno", 7.30,"Gostas",3),
     ("Secador", 150.90 ,"Seca cabelos",4),

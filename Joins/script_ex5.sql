@@ -3,14 +3,14 @@ CREATE DATABASE db_construindo_a_nossa_vida;
 USE db_construindo_a_nossa_vida;
 
 CREATE TABLE tb_categoria(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     tipo VARCHAR(255) NOT NULL,
     ambiente VARCHAR(255) NOT NULL,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE tb_produto(
-	id BIGINT(5) AUTO_INCREMENT,
+    id BIGINT(5) AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
     preco DECIMAL(10,2),
     quantidade BIGINT(5) NULL,
@@ -23,7 +23,7 @@ CREATE TABLE tb_produto(
 
 INSERT INTO tb_categoria(tipo,ambiente)
 VALUES
-	("Hidraulico","casa"),
+    ("Hidraulico","casa"),
     ("Civil","casa"),
     ("Revestimentos","casa"),
     ("Marcenária","casa"),
@@ -31,7 +31,7 @@ VALUES
     
 INSERT INTO tb_produto(nome, preco, quantidade, categoria_id)
 VALUES
-	("Cimento",34.90,400,2),
+    ("Cimento",34.90,400,2),
     ("Porcelanato", 55.99,233,3),
     ("Janelas",80.99, 105,4),
     ("Porta",65.99,789,4),
